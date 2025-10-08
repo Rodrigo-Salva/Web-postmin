@@ -1,0 +1,329 @@
+/* ---------------------- RESET ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  color: #00e5ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00e5ff;
+  transform: translateY(-3px);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #00e5ff;
+}
+
+/* ---------------------- HERO ---------------------- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d")
+      center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 40px 50px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: slideUp 1.2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* ---------------------- QUIÉNES SOMOS ---------------------- */
+.quienes {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.quienes .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.quienes img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s;
+}
+
+.quienes img:hover {
+  transform: scale(1.05);
+}
+
+.texto {
+  width: 45%;
+}
+
+.texto h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #00a8ff;
+}
+
+.texto p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* ---------------------- EQUIPO ---------------------- */
+.equipo {
+  text-align: center;
+  padding: 100px 10%;
+  background: linear-gradient(180deg, #f0f8ff, #e6faff);
+}
+
+.equipo h2 {
+  font-size: 2.2em;
+  color: #0077b6;
+  margin-bottom: 40px;
+}
+
+.miembros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #0096c7;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* ---------------------- CONTENIDO SEMANA ---------------------- */
+.contenido-semana {
+  padding: 100px 10%;
+  text-align: center;
+  background: #fff;
+  animation: fadeIn 1.5s ease;
+}
+
+.contenido-semana h1 {
+  font-size: 2.5em;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.contenido-semana p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contenido-semana img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------------- MENÚ DE SEMANAS ---------------------- */
+.menu-semanas {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-toggle-semanas {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077cc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background: #f0f0f0;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  display: block;
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.submenu.show {
+  display: block;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+footer {
+  background: #001219;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+}
+
+footer .social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+footer .social img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) invert(0.7);
+}
+
+/* ---------------------- ANIMATIONS ---------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .quienes .container {
+    flex-direction: column;
+  }
+
+  .quienes img,
+  .texto {
+    width: 100%;
+  }
+}
