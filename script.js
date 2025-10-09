@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Detectar si estamos en la carpeta /semanas/ para ajustar rutas
   const inSemanas = window.location.pathname.includes("/semanas/");
   const basePath = inSemanas ? "../" : "./";
 
@@ -17,20 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
       headerContainer.innerHTML = data;
-
-      // Inicializar Bootstrap
-      const bsScript = document.createElement("script");
-      bsScript.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
-      document.body.appendChild(bsScript);
+      console.log("✅ Header cargado correctamente");
+      // NO se carga JS de Bootstrap aquí, ya está en el HTML
     })
     .catch(err => console.error("⚠️ Error cargando header:", err));
 
   // Cargar FOOTER
   fetch(basePath + "footer.html")
-    .then(res => res.text())
+    .then(res => {
+      if (!res.ok) throw new Error("No se pudo cargar footer.html");
+      return res.text();
+    })
     .then(data => {
       const footerContainer = document.getElementById("footer-placeholder");
-      if (footerContainer) footerContainer.innerHTML = data;
+      if (footerContainer) {
+        footerContainer.innerHTML = data;
+        console.log("✅ Footer cargado correctamente");
+      }
     })
     .catch(err => console.error("⚠️ Error cargando footer:", err));
 });

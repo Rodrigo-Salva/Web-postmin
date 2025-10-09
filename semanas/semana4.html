@@ -3,23 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semana X - Proyecto Web</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Semana 6 - Proyecto Web</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h2 {
+      color: #0d6efd;
+    }
+
+    .section-card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .img-fluid {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.05);
+    }
+
+    p, li {
+      color: #495057;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header reutilizable -->
   <div id="header-placeholder"></div>
 
-  <section class="contenido-semana">
-    <h1>Semana X</h1>
-    <p>Contenido o resumen de lo trabajado en esta semana.</p>
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Semana X">
-  </section>
+  <main class="container my-5" style="padding-top: 50px;">
 
-  <!-- Footer reutilizable -->
+    <h1 class="text-center fw-bold mb-5">Semana 6</h1>
+
+    <section class="section-card">
+      <p>
+        Durante esta semana, tras realizar una investigación más rigurosa sobre el reto seleccionado y evaluar la viabilidad de nuestra primera alternativa de solución, 
+        como grupo decidimos optar por un cambio de enfoque, considerando toda la información recolectada.
+      </p>
+
+      <p>
+        Nuestra nueva alternativa de solución es un dispositivo compacto tipo clip que se puede sujetar a la ropa o enganchar en los audífonos que van alrededor del cuello. 
+        Su objetivo es detectar malas posturas en tiempo real y alertar al usuario (principalmente estudiantes) mediante vibración. Está diseñado para ser cómodo y discreto.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="fw-bold mb-3">Descripción del funcionamiento</h2>
+      <p>
+        Postmin es un dispositivo portátil que se puede sujetar fácilmente a la ropa o a los audífonos. Funciona con Arduino y utiliza un sensor de vibración para detectar 
+        cuando el usuario adopta una mala postura. Cuando el sensor identifica una inclinación incorrecta durante un tiempo determinado, el dispositivo emite una señal de vibración 
+        que sirve como recordatorio inmediato para corregir la postura.
+      </p>
+      <p>
+        El sistema está diseñado en una carcasa impresa en 3D, lo que le otorga ligereza, resistencia y la posibilidad de personalizar su forma y estética. 
+        Gracias a esta fabricación, Postmin es discreto, cómodo y fácil de transportar, ideal para estudiantes que pasan varias horas en clases o frente a la computadora.
+      </p>
+      <p><strong>Link del prototipo en Tinkercad:</strong> 
+        <a href="https://www.tinkercad.com/things/60wytkf4gZg-shiny-habbi-kasi/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=c53Efu4RwjOSgt_1-x6g9a4lV-qBBx-s3UIuj0uHmaQ" target="_blank">Ver prototipo en Tinkercad</a>
+      </p>
+    </section>
+
+    <!-- Imágenes del prototipo -->
+    <section class="section-card">
+      <div class="row text-center g-4">
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image1.png" alt="Prototipo 1" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image2.png" alt="Prototipo 2" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image3.png" alt="Prototipo 3" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image4.png" alt="Prototipo 4" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image5.png" alt="Prototipo 5" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image6.png" alt="Prototipo 6" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image7.png" alt="Prototipo 7" class="img-fluid shadow-sm"></div>
+      </div>
+    </section>
+
+    <!-- Imagen referencial -->
+    <section class="section-card">
+      <h2 class="fw-bold mb-3">Imagen referencial de uso del prototipo</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image8.png" alt="Uso 1" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image9.png" alt="Uso 2" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image10.png" alt="Uso 3" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image11.png" alt="Uso 4" class="img-fluid shadow-sm"></div>
+      </div>
+    </section>
+
+    <!-- Corte Láser -->
+    <section class="section-card">
+      <h2 class="fw-bold mb-3">Corte Láser</h2>
+      <p>
+        El corte láser es una tecnología de fabricación digital que utiliza un haz de luz altamente concentrado para separar, marcar o modificar materiales. Su precisión, velocidad y versatilidad 
+        lo han convertido en una de las herramientas más utilizadas en procesos de diseño, prototipado y producción industrial.
+      </p>
+      <h3>Técnicas principales</h3>
+      <ul>
+        <li><strong>Corte láser:</strong> atraviesa completamente el material siguiendo líneas vectoriales. Se emplea para piezas estructurales, maquetas o prototipos.</li>
+        <li><strong>Marcado láser:</strong> modifica la superficie sin penetrarla, usado para guías, líneas de doblez o marcas de ensamblaje.</li>
+        <li><strong>Grabado láser:</strong> elimina capas superficiales generando texturas o relieves para personalización de productos.</li>
+      </ul>
+      <h3>Encastres (Joints)</h3>
+      <ul>
+        <li><strong>Press-fit:</strong> piezas que encajan ajustadas sin adhesivos.</li>
+        <li><strong>Slot & Tab:</strong> inserción de pestañas en ranuras.</li>
+        <li><strong>Finger joints:</strong> uniones en 90° usadas en cajas y estructuras.</li>
+      </ul>
+    </section>
+
+    <!-- Diseño para corte láser -->
+    <section class="section-card">
+      <h2 class="fw-bold mb-3">Diseño para corte láser</h2>
+      <p>
+        Se usaron encastres tipo finger joints, piezas planas para exportación en 2D, geometría rectangular y aplicación de corte, marcado y grabado láser. 
+        Esto permite armado firme, optimización de material y personalización del diseño.
+      </p>
+      <p><strong>Link de OnShape:</strong> 
+        <a href="https://cad.onshape.com/documents/647615d0fbf4d89349f13e13/w/15b6786d6ee7d4ebfbc767ed/e/e0f17a5c4733213b97a1c908?renderMode=0&uiState=68d9ce0afd5d58c83e956e7d" target="_blank">Ver diseño en OnShape</a>
+      </p>
+    </section>
+
+    <!-- Imágenes corte láser y ensamblado -->
+    <section class="section-card">
+      <div class="row text-center g-4">
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image12.png" alt="Corte Láser 1" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image13.png" alt="Corte Láser 2" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image14.png" alt="Corte Láser 3" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image15.png" alt="Corte Láser 4" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image16.png" alt="Corte Láser 5" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image17.png" alt="Corte Láser 6" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image18.png" alt="Corte Láser 7" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image19.png" alt="Corte Láser 8" class="img-fluid shadow-sm"></div>
+        <div class="col-md-3 mb-3"><img src="/img/semana4/image20.png" alt="Corte Láser 9" class="img-fluid shadow-sm"></div>
+      </div>
+    </section>
+
+    <!-- Prototipo final 3D -->
+    <section class="section-card">
+      <h2 class="fw-bold mb-3">Prototipo final en 3D diseñado en Tinkercad</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4 mb-3"><img src="/img/semana4/image28.png" alt="Prototipo final 1" class="img-fluid shadow-sm"></div>
+        <div class="col-md-4 mb-3"><img src="/img/semana4/image29.png" alt="Prototipo final 2" class="img-fluid shadow-sm"></div>
+        <div class="col-md-4 mb-3"><img src="/img/semana4/image30.png" alt="Prototipo final 3" class="img-fluid shadow-sm"></div>
+      </div>
+    </section>
+
+    <!-- Aspectos considerados -->
+    <section class="section-card">
+      <h2 class="fw-bold mb-3">Aspectos considerados en el prototipo enganchable</h2>
+      <ul>
+        <li><strong>Sistema de sujeción:</strong> Ganchos superiores para engancharse de forma segura en el cuello o borde de la camisa.</li>
+        <li><strong>Antropometría del usuario:</strong> Medidas personalizadas para adaptarse correctamente al cuerpo.</li>
+        <li><strong>Peso y balance:</strong> Estructura ligera y distribución equilibrada del material.</li>
+        <li><strong>Zonas de corrección:</strong> Elementos posteriores que ejercen presión suave para recordar postura correcta.</li>
+        <li><strong>Material flexible:</strong> PLA o TPU para rigidez estructural y flexibilidad.</li>
+        <li><strong>Diseño discreto:</strong> Dimensiones compactas para uso debajo o sobre la ropa sin ser visible.</li>
+      </ul>
+    </section>
+
+  </main>
+
   <div id="footer-placeholder"></div>
 
   <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,23 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semana 1 - Proyecto Web</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Semana 2 - Proyecto Web</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f2f5f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h2, h3 {
+      color: #0d6efd;
+    }
+
+    .section-card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .section-title {
+      border-left: 5px solid #0d6efd;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .list-group-item img {
+      max-height: 180px;
+      margin-top: 0.5rem;
+    }
+
+    .img-fluid {
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
 </head>
 <body>
 
-  <!-- Header reutilizable -->
   <div id="header-placeholder"></div>
 
-  <section class="contenido-semana">
-    <h1>Semana 1</h1>
-    <p>Durante esta semana exploramos los fundamentos del desarrollo web, aprendiendo HTML y CSS desde cero.</p>
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Semana 1">
-  </section>
+  <main class="container my-5" style="padding-top: 50px;">
 
-  <!-- Footer reutilizable -->
+    <h1 class="text-center fw-bold mb-4">Design Thinking</h1>
+    <p class="text-center fs-5 text-muted mb-5">
+      Durante esta semana exploramos la metodología Design Thinking, aprendiendo a analizar, crear
+      y validar ideas que realmente ayuden a las personas.
+    </p>
+
+    <!-- SECCIÓN 1: Empatizar -->
+    <section class="section-card">
+      <h2 class="section-title">1. Empatizar</h2>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <p>
+            Según <strong>Clínica San Felipe (2024)</strong>, los estudiantes pasan largas horas frente a computadoras
+            con malas posturas, lo que genera:
+          </p>
+          <ul>
+            <li>Dolores de espalda, cuello y hombros por falta de ergonomía.</li>
+            <li>Fatiga visual y mental al no tomar descansos regulares.</li>
+            <li>Riesgo de desarrollar problemas crónicos de salud.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/img/semana1/image.png" class="img-fluid shadow-sm" alt="Problemas posturales">
+        </div>
+      </div>
+
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <h5 class="fw-bold mt-3">Problema detectado</h5>
+          <p>
+            ¿Cómo diseñar un sistema que ayude a los estudiantes a monitorear y mejorar su postura y hábitos frente a la computadora?
+          </p>
+
+          <h5 class="fw-bold mt-3">Comunidad afectada</h5>
+          <p>
+            Jóvenes que cursan carreras técnicas y pasan gran parte del día frente a la computadora.
+            Buscan soluciones simples, económicas y prácticas que no interrumpan sus actividades diarias.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/img/semana1/image2.png" class="img-fluid shadow-sm" alt="Comunidad afectada">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: Definir -->
+    <section class="section-card">
+      <h2 class="section-title">2. Definir</h2>
+      <p>
+        En esta etapa, sintetizamos la información recolectada para definir el problema de forma clara.
+        Es el punto donde identificamos qué realmente necesita el usuario.
+      </p>
+      <p>
+        Los estudiantes pasan gran parte de su tiempo frente al computador realizando tareas académicas.
+        Sin orientación ergonómica ni mobiliario adecuado, suelen adoptar posturas inadecuadas...
+      </p>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 text-center">
+          <img src="/img/semana1/image3.png" class="img-fluid shadow-sm" alt="Definir - Reto planteado">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: Idear -->
+    <section class="section-card">
+      <h2 class="section-title">3. Idear</h2>
+      <div class="row align-items-center flex-md-row-reverse mb-4">
+        <div class="col-md-6 text-center">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" class="img-fluid shadow-sm" alt="Idear">
+        </div>
+        <div class="col-md-6">
+          <p>Generamos muchas ideas posibles sin juzgar. Aquí la creatividad fluye libremente para encontrar soluciones innovadoras.</p>
+        </div>
+      </div>
+
+      <h3 class="fw-semibold mt-4 mb-3">Lluvia de Ideas</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">PostureBand</h5>
+              <p class="card-text">Banda con sensores que detecta malas posturas y vibra para corregir.</p>
+              <img src="/img/semana1/image4.png" class="img-fluid mt-2" alt="PostureBand">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Fotocheck inteligente</h5>
+              <p class="card-text">Credencial que mide inclinación del tronco y alerta visual o vibratoria.</p>
+              <img src="/img/semana1/image5.png" class="img-fluid mt-2" alt="Fotocheck inteligente">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Silla con sensores</h5>
+              <p class="card-text">Detecta mala postura al sentarse y vibra para corregir.</p>
+              <img src="/img/semana1/image6.png" class="img-fluid mt-2" alt="Silla con sensores">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Postmin</h5>
+              <p class="card-text">Sistema con cámara para monitoreo de postura en tiempo real.</p>
+              <img src="/img/semana1/image7.png" class="img-fluid mt-2" alt="Postmin">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: Prototipar -->
+    <section class="section-card">
+      <h2 class="section-title">4. Prototipar</h2>
+      <p>Convertimos las ideas en modelos o representaciones tangibles para probarlas.</p>
+      <div class="card p-3 shadow-sm mt-3">
+        <h5 class="fw-semibold mb-2">Prototipo de solución en Tinkercad</h5>
+        <p>El sistema utiliza la cámara de la computadora para capturar la postura y dar retroalimentación.</p>
+        <a href="https://www.tinkercad.com/things/jA8DLmKiuBK/edit?sharecode=MZ1D66s0DSef-_EoyakCKl-ajSAgZEW4-qLZEG28wm0" target="_blank">Ver prototipo completo en Tinkercad</a>
+        <img src="/img/semana1/image8.png" class="img-fluid shadow-sm mt-3" alt="Prototipo Tinkercad">
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: Evaluar -->
+    <section class="section-card">
+      <h2 class="section-title">5. Evaluar</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>Probamos los prototipos con usuarios reales y recopilamos feedback para mejorar.</p>
+          <h5>Objetivo</h5>
+          <p>Reflexionar sobre fortalezas y limitaciones del prototipo desarrollado.</p>
+          <h5>Reflexión</h5>
+          <p>El prototipo cumple la función básica, pero se pueden integrar mejoras como notificaciones inteligentes e historial de sesiones.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/img/semana1/image12.png" class="img-fluid shadow-sm" alt="Evaluar">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <div id="footer-placeholder"></div>
 
   <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
