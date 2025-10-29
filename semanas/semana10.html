@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 10 - Proyecto Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Header reutilizable -->
+  <div id="header-placeholder"></div>
+
+  <section class="container my-5">
+    <h1 class="text-center mb-5 fw-bold">SEMANA 10</h1>
+
+    <!-- Clasificación de piezas -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Clasificación de piezas del proyecto</h3>
+      <p>Descripción general del trabajo de clasificación de las piezas.</p>
+      <div class="text-center">
+        <img src="/img/semana10/image1.png" alt="Clasificación de piezas" class="img-fluid rounded-4 shadow-sm" style="max-width: 500px;">
+      </div>
+    </div>
+
+    <!-- Ajustes previos -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Ajustes previos a la fabricación</h3>
+      <ul class="mb-0">
+        <li>Carcasa principal: 80 mm x 60 mm x 25 mm</li>
+        <li>Pinzas/clips: Abertura de 25-30 mm</li>
+        <li>Tolerancia general: ±0.4 mm</li>
+        <li>Agujeros M3: 3.2 mm de diámetro</li>
+        <li>Espesor de paredes: 2-2.5 mm</li>
+        <li>Zona de flexión: 1.5-2 mm</li>
+        <li>Zona de agarre: 3-4 mm</li>
+      </ul>
+    </div>
+
+    <!-- Componentes de corte láser -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Componentes de corte láser</h3>
+      <ul>
+        <li>Base estructural: 100 mm x 80 mm, MDF de 3 mm</li>
+        <li>Refuerzos laterales: 60 mm x 30 mm, Acrílico 3 mm</li>
+        <li>Ranuras de ensamblaje: 3.2 mm de ancho</li>
+      </ul>
+    </div>
+
+    <!-- Orientación impresión 3D -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Orientación de impresión 3D</h3>
+      <ul>
+        <li>Carcasa principal: apertura hacia arriba</li>
+        <li>Pinzas/clips: posición plana (horizontal)</li>
+        <li>Soporte sensor IMU: base plana hacia abajo</li>
+        <li>Tapa: boca abajo</li>
+      </ul>
+    </div>
+
+    <!-- Parámetros impresión 3D -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Parámetros de impresión 3D</h3>
+      <ul>
+        <li>Temperatura: 200-210°C (PLA)</li>
+        <li>Velocidad: 50 mm/s</li>
+        <li>Altura de capa: 0.2 mm</li>
+        <li>Relleno general: 20%</li>
+        <li>Relleno pinzas: 30-40%</li>
+      </ul>
+    </div>
+
+    <!-- Layout optimizado -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Layout optimizado para corte láser</h3>
+      <p>Separación mínima entre contornos: 5 mm. Piezas alineadas paralelas para minimizar desperdicio y cortes interiores primero.</p>
+    </div>
+
+    <!-- Modelo ajustado -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Modelo ajustado</h3>
+      <div class="text-center">
+        <img src="/img/semana10/image2.png" alt="Modelo ajustado" class="img-fluid rounded-4 shadow-sm" style="max-width: 500px;">
+      </div>
+    </div>
+
+    <!-- Roles del equipo -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Asignación de roles del equipo</h3>
+
+      <h5>Responsable de impresión 3D: <span class="fw-normal">Rafael Chuco</span></h5>
+      <ul>
+        <li>Exportar archivos STL y configurar orientación correcta</li>
+        <li>Calcular tiempo de impresión y supervisar calidad</li>
+      </ul>
+
+      <h5>Responsable de corte láser: <span class="fw-normal">Rodrigo Salva</span></h5>
+      <ul>
+        <li>Exportar archivos DXF/SVG y crear layout optimizado</li>
+        <li>Configurar potencia y velocidad según material</li>
+      </ul>
+
+      <h5>Responsable de documentación: <span class="fw-normal">Roberto Lopez</span></h5>
+      <ul>
+        <li>Fotografiar etapas, actualizar Google Sites y registrar bitácora</li>
+      </ul>
+
+      <h5>Responsable de ensamblaje: <span class="fw-normal">Arnold Alva</span></h5>
+      <ul>
+        <li>Probar encaje de piezas, funcionamiento de pinzas y montaje electrónico</li>
+      </ul>
+    </div>
+
+    <!-- Comentario final -->
+    <div class="p-4 mb-4 bg-light rounded-4 shadow-sm">
+      <h3 class="fw-semibold mb-3">Comentario técnico final</h3>
+      <p>
+        El proyecto de monitoreo de postura ergonómica combina impresión 3D y corte láser para maximizar
+        eficiencia, funcionalidad y economía. Las pinzas horizontales evitan delaminación, el PLA aporta resistencia
+        y el MDF rigidez. Las tolerancias ±0.4 mm aseguran buen ensamblaje y el layout reduce desperdicio 30%.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer reutilizable -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
